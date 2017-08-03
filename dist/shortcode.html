@@ -17,7 +17,10 @@
 				<h1 class="col-md-12">Pricing Table</h1>
 				<h6 class="col-md-12">configure your pricing table	</h6>
 			</div>
-
+			<div id="tablas"></div>
+		
+		
+		
 			<div class=" row margin-top"><img src="img/home/under.png" class="col-md-12 text-center margin-top"></div>
 
 			<footer class="row margin-top imagen-footer padding-footer">
@@ -80,6 +83,54 @@
 				</div>
 			</footer>
 		</div>
+		<script type="text/x-handlebars-template" id="index">
+			
+			{{#each planes}}
+			
+			<div class="col-md-3">{{{textoUno}}}</div>
+			
+			
+			
+			{{/each}}
+		</script>
+		
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
 		<script src="https://use.fontawesome.com/a52b638e62.js"></script>
+		
+		
+		<script type="text/javascript">
+		
+		var template = document.getElementById("index").innerHTML;
+		
+			console.log(template);
+		
+			var compilar = Handlebars.compile(template);
+		
+			var datos = [
+				{
+					titulo1:"titulo1.png",
+					titulo2:"titulo2.png",
+					titulo3:"titulo3.png",
+					titulo4:"titulo4.png"
+				},
+				{
+					textoUno:"Lorem ipsum dolor",
+					textoDos:"Consectetur adipiscing",
+					textoTres:"Nulla pellentesque",
+					textoCuatro:"Integer quis risus",
+					textoCinco:"Phasellus et metus",
+					textoSeis:"Duis nec massa inter"
+				},
+				{
+					paloma:"/",
+					tache:"X"
+				}
+		
+			]
+			
+			var compiladoHTML = compilar(datos);
+		
+			document.getElementById("tablas").innerHTML+=compiladoHTML;
+	</script>
 	</body>
 </html>
