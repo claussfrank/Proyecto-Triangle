@@ -85,11 +85,11 @@
 		</div>
 		<script type="text/x-handlebars-template" id="index">
 			
-			{{#each planes}}
+			{{#each imgenes}}
 			
-			<div class="col-md-3">{{{textoUno}}}</div>
-			
-			
+			<div class="col-md-3" src="img/pricing/{{{trianguloAzul}}}"></div>
+		
+		
 			
 			{{/each}}
 		</script>
@@ -106,28 +106,28 @@
 		
 			var compilar = Handlebars.compile(template);
 		
-			var datos = [
-				{
-					titulo1:"titulo1.png",
-					titulo2:"titulo2.png",
-					titulo3:"titulo3.png",
-					titulo4:"titulo4.png"
-				},
-				{
-					textoUno:"Lorem ipsum dolor",
-					textoDos:"Consectetur adipiscing",
-					textoTres:"Nulla pellentesque",
-					textoCuatro:"Integer quis risus",
-					textoCinco:"Phasellus et metus",
-					textoSeis:"Duis nec massa inter"
-				},
-				{
-					paloma:"/",
-					tache:"X"
-				}
-		
-			]
-			
+			var datos = {
+				imgenes:[
+					{ 
+						trianguloAzul:"titulo1.png",
+						titulo2:"titulo2.png",
+						titulo3:"titulo3.png",
+						titulo4:"titulo4.png"
+					},
+					{
+						textoUno:"Lorem ipsum dolor",
+						textoDos:"Consectetur adipiscing",
+						textoTres:"Nulla pellentesque",
+						textoCuatro:"Integer quis risus",
+						textoCinco:"Phasellus et metus",
+						textoSeis:"Duis nec massa inter"
+					},
+					{
+						paloma:"/",
+						tache:"X"
+					}
+				]
+			}
 			var compiladoHTML = compilar(datos);
 		
 			document.getElementById("tablas").innerHTML+=compiladoHTML;
