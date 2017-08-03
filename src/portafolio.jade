@@ -35,18 +35,38 @@ html
 				h6(class="col-md-12") BeCreative	
 				
 			div(class="row margin-top")
-				span
+				span(class="col-md-1 col-md-offset-2 text-right padding-cero")
+					img(src="img/portfolio/icon.png")
+				span(class="col-md-1 text-center padding-cero") All
+				span(class="col-md-1 text-center") Branded
+				span(class="col-md-1 text-center") Design
+				span(class="col-md-1 text-center") Folio
+				span(class="col-md-1 text-center") Logos
+				span(class="col-md-1 text-center") Mobile
+				span(class="col-md-1 text-center") Mockup
 			
-			mixin equipo(imagen,nombre,titulo)
+			mixin equipo(imagen,titulo)
 				div(class="col-md-3 margin-top")
 					.row
-						img(src="img/aboutus/#{imagen}.jpg" class="col-md-12")
-						h2(class="col-md-12") #{nombre} 
-						p(class="col-md-12") #{titulo}
-			+equipo(4,"John Doe","CEO & Developer")
-			+equipo(3,"John Doe","CEO & Developer")
-			+equipo(2,"John Doe","CEO & Developer")
-			+equipo(1,"John Doe","CEO & Developer")
+						img(src="img/portfolio/#{imagen}.jpg" class="col-md-12")
+						h4(class="col-md-12") #{titulo} 
+						
+			+equipo(1,"Sailing Vivamus")
+			+equipo(2,"Sailing Vivamus")
+			+equipo(3,"Sailing Vivamus")
+			+equipo(4,"Sailing Vivamus")
+			+equipo(5,"Sailing Vivamus")
+			+equipo(6,"Sailing Vivamus")
+			+equipo(7,"Sailing Vivamus")
+			+equipo(8,"Sailing Vivamus")
+			+equipo(9,"Sailing Vivamus")
+			+equipo(10,"Sailing Vivamus")
+			+equipo(11,"Sailing Vivamus")
+			+equipo(12,"Sailing Vivamus")
+			+equipo(13,"Sailing Vivamus")
+			+equipo(14,"Sailing Vivamus")
+			+equipo(15,"Sailing Vivamus")
+			+equipo(16,"Sailing Vivamus")
 			
 			div(class=" row margin-top")
 				img(src="img/home/under.png" class="col-md-12 text-center margin-top")
