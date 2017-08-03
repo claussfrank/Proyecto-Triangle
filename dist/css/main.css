@@ -1,3 +1,35 @@
 .imagen-triangulo{
 	background-image: url("../img/home/tour-bg.png");
 }
+.margin-top{
+	margin-top: 5%;
+}
+.botton-transparente{
+	color: darkcyan;
+	background-color: transparent;
+}
+.padding-top{
+	padding-top: 5%;
+}
+.imagen-footer{
+	background-image: url("../img/home/footer.png");
+	background-size:cover;
+	background-repeat: no-repeat;
+	
+}
+.text-red{
+	color: red;
+}
+.padding-cero{
+	padding: 0;
+}
+.margin-cero{
+	margin: 0;
+}
+.footer-endtext{
+	color: white;
+	margin-top: 50%;
+}
+.padding-footer{
+	padding-bottom: 2%;
+}
